@@ -1,0 +1,23 @@
+{
+  "name": "velvet-royale",
+  "version": "1.0.0",
+  "description": "Velvet Royale — virtual-currency casino arcade prototype",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "game",
+    "casino",
+    "express",
+    "sqlite",
+    "mobile"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
+  }
+}

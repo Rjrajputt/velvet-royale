@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Velvet Royale</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">Virtual Arcade</div>
+          <h1>Velvet Royale</h1>
+        </div>
+
+        <div class="wallet-card">
+          <span>VC Balance</span>
+          <strong id="vcBalance">0</strong>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button id="dailyBonusBtn" class="primary action">Claim Daily Bonus</button>
+        <button id="buyStarterPackBtn" class="secondary action">Buy VC Pack (Demo)</button>
+        <button id="withdrawBtn" class="ghost action" disabled>Withdraw VC (Disabled)</button>
+      </div>
+
+      <main class="main-grid">
+        <section class="panel hero-panel">
+          <div class="panel-header">
+            <h2>Player Status</h2>
+            <span id="userLabel" class="tag">Guest</span>
+          </div>
+          <div class="status-row">
+            <span>Account</span>
+            <strong id="userName">Guest</strong>
+          </div>
+          <div class="status-row highlight">
+            <span>Mode</span>
+            <strong>Virtual currency only</strong>
+          </div>
+          <div class="status-row muted">
+            <span>Demo flows</span>
+            <strong>Purchase UI only</strong>
+          </div>
+        </section>
+
+        <section class="panel game-panel">
+          <div class="panel-header">
+            <h2>Teen Patti Showdown</h2>
+            <span class="tag gold-tag">Server-side</span>
+          </div>
+          <button id="startTeenPattiBtn" class="primary action wide">Play Teen Patti Round</button>
+          <div id="teenPattiState" class="game-state empty-state">
+            Start a round to deal cards.
+          </div>
+          <div id="teenPattiActions" class="inline-actions hidden"></div>
+        </section>
+
+        <section class="panel game-panel">
+          <div class="panel-header">
+            <h2>Velvet Raffle</h2>
+            <span class="tag gold-tag">Lucky draw</span>
+          </div>
+          <button id="drawRaffleBtn" class="secondary action wide">Draw Ticket</button>
+          <div id="raffleState" class="game-state empty-state">
+            Purchase a ticket and reveal the draw.
+          </div>
+        </section>
+
+        <section class="panel leaderboard-panel">
+          <div class="panel-header">
+            <h2>Leaderboard</h2>
+            <span class="tag">Top players</span>
+          </div>
+          <div id="leaderboardList" class="leaderboard"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
